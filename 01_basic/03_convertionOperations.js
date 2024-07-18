@@ -1,3 +1,1 @@
- let isloggedin=false;
-
- console.log(Number(isloggedin));
+ console.log(null>=0);
