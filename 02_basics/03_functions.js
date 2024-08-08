@@ -9,16 +9,33 @@
 //  console.log(result);
 
 
-function loginUserMsg(name) {
-    if (!name){
-        console.log("plz enter ur name:");
-        let urname=prompt("plz enter ur name:");
-         return `${urname} just logged in`;
-    }else{
-    return `${name} just logged in`;
-    }
-}
-console.log(loginUserMsg());
-// console.log(loginUserMsg(""));
-// console.log(loginUserMsg());
+// 
 
+// function calculateCartPrice(val1,val2,...num) {
+//     return val1,val2,num;
+    
+// }
+
+// console.log(calculateCartPrice(300,200,100,800));
+ 
+// const user={
+//     username:"Ajay",
+//     price:25,
+// }
+
+// function handleObject(anyobject) {
+//     console.log(`user name is ${anyobject.username} and price of product is ${anyobject.price}`);
+    
+// }
+// handleObject({
+//     username:"Ayyanji",
+//     price:10
+// })
+
+const   myNewArray=[10,20,30,40,50];
+
+function returnSecondValue(getArray) {
+    return getArray[4]
+};
+
+console.log(returnSecondValue(myNewArray));
