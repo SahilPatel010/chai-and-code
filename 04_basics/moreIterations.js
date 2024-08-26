@@ -62,7 +62,7 @@ const coding=['java','ruby','c++','javascript','python'];
 coding.forEach(printMe)**/
 
 const myCoding=[
-    {
+    { 
         languageName:"Java",
         languageFile:".java"
     },
@@ -77,6 +77,48 @@ const myCoding=[
 ]
 
 myCoding.forEach((items) => {
-    console.log(items.languageFile);
+//console.log(items.languageFile);
     
 });
+const nums=[1,2,3,4,5,6,7,8,9,10]
+
+// const values= nums.filter((Num)=>{
+//   return  Num>4
+// })
+// console.log(values);
+const newNums=[]
+nums.forEach((num) => {
+    if (num>4) {
+        newNums.push(num)
+    }
+});
+//console.log(newNums);
+const books=[
+   {
+        title:"one",genre:'fiction',published:2000,
+        edition:2007
+    },
+   {
+        title:"two",genre:'Non-fiction',published:2001,
+        edition:2010
+    },
+   {
+        title:"three",genre:'History',published:2002,
+        edition:2011
+    },
+   {
+        title:"four",genre:'Thriller',published:2003,
+        edition:2012
+    },
+   {
+        title:"five",genre:'History',published:2004,
+        edition:2013
+    }
+]
+
+ let UseWork=books.filter((bk)=>bk.genre==='History')
+  UseWork=books.filter((bk)=>{
+ return   bk.edition>=2010
+})
+
+console.log(UseWork);
