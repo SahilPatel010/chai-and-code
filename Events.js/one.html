@@ -19,13 +19,30 @@
    </div>
 </body>
 <script>
-document.getElementById("images").addEventListener('click',function(e) {
-    //console.log(e);
-    console.log("clicked inside pic")
-},false)
+// document.getElementById("images").addEventListener('click',function(e) {
+//     //console.log(e);
+//     console.log("clicked inside pic")
+// },false)
 
-document.getElementById("river").addEventListener('click',function() {
-    console.log("U just dive into the river")
+// document.getElementById("river").addEventListener('click',function(e) {
+//     console.log("U just dive into the river")
+//     e.stopPropagation()
+// },false)
+
+// document.getElementById("google").addEventListener('click',function(e){
+//     console.log("Google just clicked");
+//     e.preventDefault()
+//     e.stopPropagation()    
+// },false)
+
+document.querySelector("#images").addEventListener('click',function(e){
+    console.log(e.target.tagName);
+    if (e.target.tagName==="IMG"){
+    let RemoveIt=e.target.parentNode
+    RemoveIt.remove()
+    }
+  // RemoveIt.parentNode.removeChild(RemoveIt)
+    
 },false)
 </script>
 </html>
