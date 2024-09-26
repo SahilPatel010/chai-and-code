@@ -19,18 +19,18 @@
 // })
 
 
- const promiseThree=new Promise(function(resolve,reject){
-     setTimeout(function(){
-         resolve({
-          userName:"Bruce" ,age:31,
-          Profession:"Batman" 
-         })
-     },500)
- })
+//  const promiseThree=new Promise(function(resolve,reject){
+//      setTimeout(function(){
+//          resolve({
+//           userName:"Bruce" ,age:31,
+//           Profession:"Batman" 
+//          })
+//      },500)
+//  })
 
- promiseThree.then(function(statement){
-    console.log(statement);
-  })
+//  promiseThree.then(function(statement){
+//     console.log(statement);
+//   })
 // const promiseFour=new Promise(function(resolve,reject){
 //  setTimeout(function(){
 //   let error=false;
