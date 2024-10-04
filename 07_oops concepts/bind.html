@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>button clicked</button>
+</body>
+<script>
+    class ReactApp{
+        constructor(){
+        this.library="React"
+        this.server="https://localhost:300"
+
+        document.querySelector('button').addEventListener('click',this.handleClick.bind(this))
+        }
+
+        handleClick(){
+            console.log("button clicked");
+            console.log(this.server);
+            
+            
+        }
+    }
+
+    const app=new ReactApp()
+</script>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Example</title>
+</head>
+<body>
+    <button>Click me</button>
+</body>
+<script>
+    class ReactApp { // Use a capitalized class name
+        constructor() {
+            this.library = "React";
+            this.server = "https://localhost:300";
+
+            // Bind the handleClick method to the current instance
+            document.querySelector('button').addEventListener('click', this.handleClick.bind(this));
+        }
+
+        handleClick() {
+            console.log("Button clicked");
+            console.log(this.server);
+        }
+    }
+
+    const app = new ReactApp(); // Create an instance of the ReactApp class
+</script>
+</html> -->
