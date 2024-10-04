@@ -14,6 +14,17 @@ class teacher extends user{
         this.email=email
         this.password=password
     }
+    addcourse(){
+        console.log(`the new course was added by ${this.userName}`);
+        
+    }
 }
+const chai=new teacher("chai","tea@gmail.com",12345)
+console.log(chai.addcourse());
 
-console.log(new teacher());
+const masalachai=new user("tea","masala@gmail.com",54321)
+
+console.log(masalachai.log());
+console.log(chai.log());
+
+console.log(chai instanceof user);
